@@ -1,0 +1,10 @@
+scrape_configs:
+ - job_name: file
+   file_sd_configs:
+    - files:
+       - '*.json'
+   relaburce_labels: [team]
+      regex: monitoring
+      replacement: monitor
+      target_label: team
+      action: replace
